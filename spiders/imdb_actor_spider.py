@@ -9,23 +9,31 @@ from utils.utils import get_logger
 
 
 class ImdbActorSpider(scrapy.Spider):
+    """
+    Scrapy spider to extract actor data from IMDb top movies.
+    Handles retries, proxy logging, and parses actor details from movie pages.
+    """
     name = 'imdb_actor'
 
     def __init__(self, *args, **kwargs):
+        """Initialize the spider and set up the logger."""
         super().__init__(*args, **kwargs)
         self._logger = get_logger(self.name)
 
     @property
     def logger(self):
+        """Return the custom logger for this spider."""
         return self._logger
 
     async def start(self):
+        """Start crawling from the IMDb top URL or provided URLs."""
         urls = getattr(self, 'start_urls', None) or [get_imdb_top_url()]
         for url in urls:
             self.logger.info(f'Starting crawl for URL: {url}')
             yield scrapy.Request(url, headers=DEFAULT_REQUEST_HEADERS)
 
     def parse(self, response):
+        """Parse the top movies page, extract movie IDs, and request detail pages."""
         # Log proxy info if present
         proxy = response.meta.get('proxy') or response.request.meta.get('proxy')
         if proxy:
@@ -62,6 +70,7 @@ class ImdbActorSpider(scrapy.Spider):
             )
 
     def parse_movie_detail(self, response):
+        """Parse the movie detail page and yield actor items."""
         # Log proxy info if present
         proxy = response.meta.get('proxy') or response.request.meta.get('proxy')
         if proxy:

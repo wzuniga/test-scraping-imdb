@@ -1,0 +1,1114 @@
+2025-07-27 00:40:48 [scrapy.utils.log] INFO: Scrapy 2.13.3 started (bot: imdb_scraper)
+2025-07-27 00:40:48 [scrapy.utils.log] INFO: Versions:
+{'lxml': '6.0.0',
+ 'libxml2': '2.14.4',
+ 'cssselect': '1.3.0',
+ 'parsel': '1.10.0',
+ 'w3lib': '2.3.1',
+ 'Twisted': '25.5.0',
+ 'Python': '3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]',
+ 'pyOpenSSL': '24.3.0 (OpenSSL 3.4.1 11 Feb 2025)',
+ 'cryptography': '44.0.3',
+ 'Platform': 'Linux-4.4.0-19041-Microsoft-x86_64-with-glibc2.35'}
+2025-07-27 00:40:48 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-07-27 00:40:48 [scrapy.extensions.telnet] INFO: Telnet Password: b1140f54b920dc46
+2025-07-27 00:40:48 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2025-07-27 00:40:48 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'imdb_scraper',
+ 'LOG_FILE': 'response.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'spiders',
+ 'RETRY_TIMES': 5,
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['spiders']}
+2025-07-27 00:40:48 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-07-27 00:40:48 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-07-27 00:40:48 [scrapy.middleware] INFO: Enabled item pipelines:
+['pipelines.pipelines_movie_actor.PostgresMovieActorPipeline']
+2025-07-27 00:40:48 [scrapy.core.engine] INFO: Spider opened
+2025-07-27 00:40:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-07-27 00:40:49 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-07-27 00:40:49 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 3, reanimated: 0, mean backoff time: 0s)
+2025-07-27 00:40:49 [imdb_actor] INFO: Starting crawl for URL: https://www.imdb.com/chart/top/
+2025-07-27 00:41:14 [rotating_proxies.middlewares] WARNING: No proxies available; marking all proxies as unchecked
+2025-07-27 00:41:19 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 2, unchecked: 0, reanimated: 1, mean backoff time: 343s)
+2025-07-27 00:41:39 [rotating_proxies.middlewares] WARNING: No proxies available; marking all proxies as unchecked
+2025-07-27 00:41:49 [scrapy.extensions.logstats] INFO: Crawled 1 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2025-07-27 00:41:49 [rotating_proxies.middlewares] INFO: Proxies(good: 0, dead: 0, unchecked: 0, reanimated: 3, mean backoff time: 0s)
+2025-07-27 00:42:03 [rotating_proxies.middlewares] WARNING: No proxies available; marking all proxies as unchecked
+2025-07-27 00:42:07 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:42:07 [imdb_actor] INFO: Total movies found: 250
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0111161
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0068646
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0468569
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0071562
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0050083
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0167260
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0108052
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0110912
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0120737
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0060196
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0109830
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0167261
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0137523
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt1375666
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0080684
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0133093
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0099685
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0816692
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0073486
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0114369
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0038650
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0102926
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0047478
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0120815
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0120689
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0317248
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0118799
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0103064
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0076759
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0088763
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0245429
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0253474
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0172495
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt6751668
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0054215
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0110357
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0095327
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0407887
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt2582802
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0056058
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0482571
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0120586
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0110413
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt9362722
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0034583
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0095765
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0114814
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt1675434
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0078748
+2025-07-27 00:42:07 [imdb_actor] INFO: Requesting detail page for movie_id: tt0027977
+2025-07-27 00:42:08 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:42:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000138 - Leonardo DiCaprio
+2025-07-27 00:42:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0330687 - Joseph Gordon-Levitt
+2025-07-27 00:42:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0680983 - Elliot Page
+2025-07-27 00:42:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0913822 - Ken Watanabe
+2025-07-27 00:42:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm0362766 - Tom Hardy
+2025-07-27 00:42:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm2438307 - Dileep Rao
+2025-07-27 00:42:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm0614165 - Cillian Murphy
+2025-07-27 00:42:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000297 - Tom Berenger
+2025-07-27 00:42:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm0182839 - Marion Cotillard
+2025-07-27 00:42:12 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000592 - Pete Postlethwaite
+2025-07-27 00:42:12 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000323 - Michael Caine
+2025-07-27 00:42:12 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001305 - Lukas Haas
+2025-07-27 00:42:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm2581730 - Tai-Li Lee
+2025-07-27 00:42:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm3637500 - Claire Geare
+2025-07-27 00:42:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm3960408 - Magnus Nolan
+2025-07-27 00:42:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm2855622 - Taylor Geare
+2025-07-27 00:42:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm3638213 - Johnathan Geare
+2025-07-27 00:42:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0556070 - Tohoru Masamune
+2025-07-27 00:42:15 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:42:15 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:42:15 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:42:15 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:42:15 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:42:15 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:42:15 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:42:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000158 - Tom Hanks
+2025-07-27 00:42:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000197 - Jack Nicholson
+2025-07-27 00:42:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000190 - Matthew McConaughey
+2025-07-27 00:42:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000434 - Mark Hamill
+2025-07-27 00:42:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000093 - Brad Pitt
+2025-07-27 00:42:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000206 - Keanu Reeves
+2025-07-27 00:42:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000122 - Charles Chaplin
+2025-07-27 00:42:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000354 - Matt Damon
+2025-07-27 00:42:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001744 - Tom Sizemore
+2025-07-27 00:42:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm0122653 - Edward Burns
+2025-07-27 00:42:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001608 - Barry Pepper
+2025-07-27 00:42:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm0004965 - Adam Goldberg
+2025-07-27 00:42:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0004874 - Vin Diesel
+2025-07-27 00:42:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000610 - Giovanni Ribisi
+2025-07-27 00:42:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001111 - Jeremy Davies
+2025-07-27 00:42:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001101 - Ted Danson
+2025-07-27 00:42:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0316079 - Paul Giamatti
+2025-07-27 00:42:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001199 - Dennis Farina
+2025-07-27 00:42:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0821152 - Joerg Stadler
+2025-07-27 00:42:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0242882 - Max Martini
+2025-07-27 00:42:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0116465 - Dylan Bruno
+2025-07-27 00:42:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0148738 - Daniel Cerqueira
+2025-07-27 00:42:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0330983 - Demetri Goritsas
+2025-07-27 00:42:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0692139 - Ian Porter
+2025-07-27 00:42:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001221 - Louise Fletcher
+2025-07-27 00:42:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0077720 - Michael Berryman
+2025-07-27 00:42:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0110480 - Peter Brocco
+2025-07-27 00:42:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0111954 - Dean R. Brooks
+2025-07-27 00:42:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0113000 - Alonzo Brown
+2025-07-27 00:42:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001079 - Scatman Crothers
+2025-07-27 00:42:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0191784 - Mwako Cumbuka
+2025-07-27 00:42:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000362 - Danny DeVito
+2025-07-27 00:42:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0240239 - William Duell
+2025-07-27 00:42:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0253574 - Josip Elic
+2025-07-27 00:42:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0271753 - Lan Fendors
+2025-07-27 00:42:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0313554 - Nathan George
+2025-07-27 00:42:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0448589 - Ken Kenny
+2025-07-27 00:42:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0483256 - Mel Lambert
+2025-07-27 00:42:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0489861 - Sydney Lassick
+2025-07-27 00:42:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0497656 - Kay Lee
+2025-07-27 00:42:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000502 - Christopher Lloyd
+2025-07-27 00:42:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0004266 - Anne Hathaway
+2025-07-27 00:42:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm1567113 - Jessica Chastain
+2025-07-27 00:42:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm3237775 - Mackenzie Foy
+2025-07-27 00:42:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000995 - Ellen Burstyn
+2025-07-27 00:42:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001475 - John Lithgow
+2025-07-27 00:42:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm3154303 - Timothée Chalamet
+2025-07-27 00:42:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0654648 - David Oyelowo
+2025-07-27 00:42:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm2180792 - Collette Wolfe
+2025-07-27 00:42:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm0565133 - Francis X. McCarthy
+2025-07-27 00:42:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm0410347 - Bill Irwin
+2025-07-27 00:42:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm0095960 - Andrew Borba
+2025-07-27 00:42:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm0004747 - Wes Bentley
+2025-07-27 00:42:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001137 - William Devane
+2025-07-27 00:42:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000323 - Michael Caine
+2025-07-27 00:42:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm1408543 - David Gyasi
+2025-07-27 00:42:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm1577637 - Josh Stewart
+2025-07-27 00:42:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000729 - Casey Affleck
+2025-07-27 00:42:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000148 - Harrison Ford
+2025-07-27 00:42:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000402 - Carrie Fisher
+2025-07-27 00:42:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001850 - Billy Dee Williams
+2025-07-27 00:42:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000355 - Anthony Daniels
+2025-07-27 00:42:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001190 - David Prowse
+2025-07-27 00:42:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm0562679 - Peter Mayhew
+2025-07-27 00:42:39 [imdb_actor] INFO: Saved actor on imdb_actors: nm0048652 - Kenny Baker
+2025-07-27 00:42:39 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000568 - Frank Oz
+2025-07-27 00:42:39 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000027 - Alec Guinness
+2025-07-27 00:42:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0120116 - Jeremy Bulloch
+2025-07-27 00:42:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0391197 - John Hollis
+2025-07-27 00:42:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0701023 - Jack Purvis
+2025-07-27 00:42:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0916088 - Des Webb
+2025-07-27 00:42:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0720890 - Clive Revill
+2025-07-27 00:42:42 [imdb_actor] INFO: Saved actor on imdb_actors: nm0171829 - Kenneth Colley
+2025-07-27 00:42:42 [imdb_actor] INFO: Saved actor on imdb_actors: nm0002103 - Julian Glover
+2025-07-27 00:42:42 [imdb_actor] INFO: Saved actor on imdb_actors: nm0790410 - Michael Sheard
+2025-07-27 00:42:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001570 - Edward Norton
+2025-07-27 00:42:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001533 - Meat Loaf
+2025-07-27 00:42:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0340260 - Zach Grenier
+2025-07-27 00:42:44 [imdb_actor] INFO: Saved actor on imdb_actors: nm0037118 - Richmond Arquette
+2025-07-27 00:42:44 [imdb_actor] INFO: Saved actor on imdb_actors: nm0028625 - David Andrews
+2025-07-27 00:42:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0536574 - George Maguire
+2025-07-27 00:42:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0094163 - Eugenie Bondurant
+2025-07-27 00:42:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0127680 - Christina Cabot
+2025-07-27 00:42:46 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000307 - Helena Bonham Carter
+2025-07-27 00:42:46 [imdb_actor] INFO: Saved actor on imdb_actors: nm0173257 - Sydney 'Big Dawg' Colston
+2025-07-27 00:42:46 [imdb_actor] INFO: Saved actor on imdb_actors: nm0802019 - Rachel Singer
+2025-07-27 00:42:47 [imdb_actor] INFO: Saved actor on imdb_actors: nm0188728 - Christie Cronenweth
+2025-07-27 00:42:47 [imdb_actor] INFO: Saved actor on imdb_actors: nm0212498 - Tim DeZarn
+2025-07-27 00:42:47 [imdb_actor] INFO: Saved actor on imdb_actors: nm0125653 - Ezra Buzzington
+2025-07-27 00:42:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0236148 - Dierdre Downing-Jackson
+2025-07-27 00:42:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0827307 - Bob Stephenson
+2025-07-27 00:42:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm0217301 - Charlie Dell
+2025-07-27 00:42:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000401 - Laurence Fishburne
+2025-07-27 00:42:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm0005251 - Carrie-Anne Moss
+2025-07-27 00:42:50 [imdb_actor] INFO: Saved actor on imdb_actors: nm0915989 - Hugo Weaving
+2025-07-27 00:42:50 [imdb_actor] INFO: Saved actor on imdb_actors: nm0287825 - Gloria Foster
+2025-07-27 00:42:50 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001592 - Joe Pantoliano
+2025-07-27 00:42:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm0159059 - Marcus Chong
+2025-07-27 00:42:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm0032810 - Julian Arahanga
+2025-07-27 00:42:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm0233391 - Matt Doran
+2025-07-27 00:42:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm0565883 - Belinda McClory
+2025-07-27 00:42:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm0662562 - Anthony Ray Parker
+2025-07-27 00:42:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm0323822 - Paul Goddard
+2025-07-27 00:42:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm0853079 - Robert Taylor
+2025-07-27 00:42:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm0040058 - David Aston
+2025-07-27 00:42:54 [imdb_actor] INFO: Saved actor on imdb_actors: nm0336802 - Marc Aden Gray
+2025-07-27 00:42:54 [imdb_actor] INFO: Saved actor on imdb_actors: nm0630124 - Ada Nicodemou
+2025-07-27 00:42:54 [imdb_actor] INFO: Saved actor on imdb_actors: nm0330139 - Deni Gordon
+2025-07-27 00:42:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm0936894 - Rowan Witt
+2025-07-27 00:42:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm0002104 - Paulette Goddard
+2025-07-27 00:42:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm0074788 - Henry Bergman
+2025-07-27 00:42:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm0761866 - Tiny Sandford
+2025-07-27 00:42:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm0174682 - Chester Conklin
+2025-07-27 00:42:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm0003424 - Hank Mann
+2025-07-27 00:42:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm0090008 - Stanley Blystone
+2025-07-27 00:42:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm0305087 - Al Ernest Garcia
+2025-07-27 00:42:58 [imdb_actor] INFO: Saved actor on imdb_actors: nm0018685 - Richard Alexander
+2025-07-27 00:42:58 [imdb_actor] INFO: Saved actor on imdb_actors: nm0721637 - Cecil Reynolds
+2025-07-27 00:42:58 [imdb_actor] INFO: Saved actor on imdb_actors: nm0571901 - Mira McKinney
+2025-07-27 00:42:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm0534259 - Murdock MacQuarrie
+2025-07-27 00:42:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm0524306 - Wilfred Lucas
+2025-07-27 00:42:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm1250355 - Edward LeSaint
+2025-07-27 00:43:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm0538984 - Fred Malatesta
+2025-07-27 00:43:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm0825624 - Sammy Stein
+2025-07-27 00:43:01 [imdb_actor] INFO: Saved actor on imdb_actors: nm0840339 - Juana Sutton
+2025-07-27 00:43:01 [imdb_actor] INFO: Saved actor on imdb_actors: nm0647013 - Ted Oliver
+2025-07-27 00:43:01 [rotating_proxies.middlewares] INFO: Proxies(good: 1, dead: 2, unchecked: 0, reanimated: 0, mean backoff time: 3325s)
+2025-07-27 00:43:01 [scrapy.extensions.logstats] INFO: Crawled 10 pages (at 9 pages/min), scraped 144 items (at 144 items/min)
+2025-07-27 00:43:01 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:43:01 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:43:01 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:43:02 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000158 - Tom Hanks
+2025-07-27 00:43:02 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000209 - Tim Robbins
+2025-07-27 00:43:02 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000704 - Elijah Wood
+2025-07-27 00:43:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm0003817 - Michael Clarke Duncan
+2025-07-27 00:43:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001556 - David Morse
+2025-07-27 00:43:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001372 - Bonnie Hunt
+2025-07-27 00:43:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000342 - James Cromwell
+2025-07-27 00:43:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0005052 - Michael Jeter
+2025-07-27 00:43:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001295 - Graham Greene
+2025-07-27 00:43:05 [imdb_actor] INFO: Saved actor on imdb_actors: nm0006535 - Doug Hutchison
+2025-07-27 00:43:05 [imdb_actor] INFO: Saved actor on imdb_actors: nm0005377 - Sam Rockwell
+2025-07-27 00:43:06 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001608 - Barry Pepper
+2025-07-27 00:43:06 [imdb_actor] INFO: Saved actor on imdb_actors: nm0218810 - Jeffrey DeMunn
+2025-07-27 00:43:06 [imdb_actor] INFO: Saved actor on imdb_actors: nm0165101 - Patricia Clarkson
+2025-07-27 00:43:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001765 - Harry Dean Stanton
+2025-07-27 00:43:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm0339428 - Dabbs Greer
+2025-07-27 00:43:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm0107573 - Eve Brent
+2025-07-27 00:43:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm0006669 - William Sadler
+2025-07-27 00:43:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm0587183 - Mack Miles
+2025-07-27 00:43:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm0850847 - Rai Tasco
+2025-07-27 00:43:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000151 - Morgan Freeman
+2025-07-27 00:43:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0348409 - Bob Gunton
+2025-07-27 00:43:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm0006669 - William Sadler
+2025-07-27 00:43:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000317 - Clancy Brown
+2025-07-27 00:43:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm0004743 - Gil Bellows
+2025-07-27 00:43:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001679 - Mark Rolston
+2025-07-27 00:43:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm0926235 - James Whitmore
+2025-07-27 00:43:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm0218810 - Jeffrey DeMunn
+2025-07-27 00:43:12 [imdb_actor] INFO: Saved actor on imdb_actors: nm0104594 - Larry Brandenburg
+2025-07-27 00:43:12 [imdb_actor] INFO: Saved actor on imdb_actors: nm0321358 - Neil Giuntoli
+2025-07-27 00:43:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm0508742 - Brian Libby
+2025-07-27 00:43:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm0698998 - David Proval
+2025-07-27 00:43:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm0706554 - Joseph Ragno
+2025-07-27 00:43:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0161980 - Jude Ciccolella
+2025-07-27 00:43:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0005204 - Paul McCrane
+2025-07-27 00:43:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0086169 - Renee Blaine
+2025-07-27 00:43:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0542957 - Scott Mann
+2025-07-27 00:43:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0005212 - Ian McKellen
+2025-07-27 00:43:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001557 - Viggo Mortensen
+2025-07-27 00:43:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0089217 - Orlando Bloom
+2025-07-27 00:43:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0021600 - Bruce Allpress
+2025-07-27 00:43:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000276 - Sean Astin
+2025-07-27 00:43:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0045324 - John Bach
+2025-07-27 00:43:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm1019674 - Sala Baker
+2025-07-27 00:43:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000949 - Cate Blanchett
+2025-07-27 00:43:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0101710 - Billy Boyd
+2025-07-27 00:43:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0112400 - Jed Brophy
+2025-07-27 00:43:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm1275186 - Sam Comery
+2025-07-27 00:43:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000374 - Brad Dourif
+2025-07-27 00:43:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm1275727 - Calum Gittins
+2025-07-27 00:43:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0384060 - Bernard Hill
+2025-07-27 00:43:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0394126 - Bruce Hopkins
+2025-07-27 00:43:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm1277591 - Paris Howe Strewe
+2025-07-27 00:43:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000489 - Christopher Lee
+2025-07-27 00:43:21 [rotating_proxies.middlewares] INFO: Proxies(good: 1, dead: 2, unchecked: 0, reanimated: 0, mean backoff time: 3325s)
+2025-07-27 00:43:21 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:43:21 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:43:21 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:43:21 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:43:21 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:43:21 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:43:21 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:43:21 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:43:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000151 - Morgan Freeman
+2025-07-27 00:43:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000134 - Robert De Niro
+2025-07-27 00:43:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000158 - Tom Hanks
+2025-07-27 00:43:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000071 - James Stewart
+2025-07-27 00:43:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000149 - Jodie Foster
+2025-07-27 00:43:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001536 - Toshirô Mifune
+2025-07-27 00:43:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000244 - Sigourney Weaver
+2025-07-27 00:43:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0167388 - François Cluzet
+2025-07-27 00:43:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000093 - Brad Pitt
+2025-07-27 00:43:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000228 - Kevin Spacey
+2025-07-27 00:43:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001825 - Andrew Kevin Walker
+2025-07-27 00:43:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0669254 - Daniel Zacapa
+2025-07-27 00:43:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000569 - Gwyneth Paltrow
+2025-07-27 00:43:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0144307 - John Cassini
+2025-07-27 00:43:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0532943 - Bob Mack
+2025-07-27 00:43:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0188598 - Peter Crombie
+2025-07-27 00:43:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0146146 - Reg E. Cathey
+2025-07-27 00:43:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000388 - R. Lee Ermey
+2025-07-27 00:43:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0160690 - George Christy
+2025-07-27 00:43:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0401352 - Endre Hules
+2025-07-27 00:43:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0416551 - Hawthorne James
+2025-07-27 00:43:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0203525 - William Davidson
+2025-07-27 00:43:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0172172 - Bob Collins
+2025-07-27 00:43:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0367211 - Jimmy Dale Hartsell
+2025-07-27 00:43:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0745780 - Richard Roundtree
+2025-07-27 00:43:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000501 - Ray Liotta
+2025-07-27 00:43:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000582 - Joe Pesci
+2025-07-27 00:43:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000966 - Lorraine Bracco
+2025-07-27 00:43:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000649 - Paul Sorvino
+2025-07-27 00:43:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0803370 - Frank Sivero
+2025-07-27 00:43:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm0201700 - Tony Darrow
+2025-07-27 00:43:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm0823563 - Mike Starr
+2025-07-27 00:43:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm0898634 - Frank Vincent
+2025-07-27 00:43:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm0522797 - Chuck Low
+2025-07-27 00:43:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm0226746 - Frank DiLeo
+2025-07-27 00:43:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm0950267 - Henny Youngman
+2025-07-27 00:43:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm0557848 - Gina Mastrogiacomo
+2025-07-27 00:43:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm0778734 - Catherine Scorsese
+2025-07-27 00:43:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm0778737 - Charles Scorsese
+2025-07-27 00:43:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm0791877 - Suzanne Shepherd
+2025-07-27 00:43:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000529 - Debi Mazar
+2025-07-27 00:43:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm0935247 - Margo Winkler
+2025-07-27 00:43:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000705 - Robin Wright
+2025-07-27 00:43:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000641 - Gary Sinise
+2025-07-27 00:43:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000398 - Sally Field
+2025-07-27 00:43:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm0931508 - Rebecca Williams
+2025-07-27 00:43:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm0402011 - Michael Conner Humphreys
+2025-07-27 00:43:39 [imdb_actor] INFO: Saved actor on imdb_actors: nm0381041 - Harold G. Herthum
+2025-07-27 00:43:39 [imdb_actor] INFO: Saved actor on imdb_actors: nm0446404 - George Kelly
+2025-07-27 00:43:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0672225 - Bob Penny
+2025-07-27 00:43:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0709615 - John Randall
+2025-07-27 00:43:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0027402 - Sam Anderson
+2025-07-27 00:43:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0602071 - Margo Moorer
+2025-07-27 00:43:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0854295 - Ione M. Telech
+2025-07-27 00:43:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0780410 - Christine Seabrook
+2025-07-27 00:43:42 [imdb_actor] INFO: Saved actor on imdb_actors: nm0941621 - John Worsham
+2025-07-27 00:43:42 [imdb_actor] INFO: Saved actor on imdb_actors: nm0229930 - Peter Dobson
+2025-07-27 00:43:42 [imdb_actor] INFO: Saved actor on imdb_actors: nm0266441 - Siobhan Fallon Hogan
+2025-07-27 00:43:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0954754 - Alexander Zemeckis
+2025-07-27 00:43:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001656 - Donna Reed
+2025-07-27 00:43:44 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000859 - Lionel Barrymore
+2025-07-27 00:43:44 [imdb_actor] INFO: Saved actor on imdb_actors: nm0593775 - Thomas Mitchell
+2025-07-27 00:43:44 [imdb_actor] INFO: Saved actor on imdb_actors: nm0871287 - Henry Travers
+2025-07-27 00:43:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0094135 - Beulah Bondi
+2025-07-27 00:43:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0269709 - Frank Faylen
+2025-07-27 00:43:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000955 - Ward Bond
+2025-07-27 00:43:46 [imdb_actor] INFO: Saved actor on imdb_actors: nm0002108 - Gloria Grahame
+2025-07-27 00:43:46 [imdb_actor] INFO: Saved actor on imdb_actors: nm0912478 - H.B. Warner
+2025-07-27 00:43:46 [imdb_actor] INFO: Saved actor on imdb_actors: nm0007214 - Frank Albertson
+2025-07-27 00:43:47 [imdb_actor] INFO: Saved actor on imdb_actors: nm0439851 - Todd Karns
+2025-07-27 00:43:47 [imdb_actor] INFO: Saved actor on imdb_actors: nm0385594 - Samuel S. Hinds
+2025-07-27 00:43:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0871695 - Mary Treen
+2025-07-27 00:43:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0666634 - Virginia Patton
+2025-07-27 00:43:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0930239 - Charles Williams
+2025-07-27 00:43:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm0250352 - Sarah Edwards
+2025-07-27 00:43:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm0249602 - William Edmunds
+2025-07-27 00:43:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000164 - Anthony Hopkins
+2025-07-27 00:43:50 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001277 - Scott Glenn
+2025-07-27 00:43:50 [imdb_actor] INFO: Saved actor on imdb_actors: nm0505971 - Ted Levine
+2025-07-27 00:43:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm0372217 - Anthony Heald
+2025-07-27 00:43:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm0807548 - Brooke Smith
+2025-07-27 00:43:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000832 - Diane Baker
+2025-07-27 00:43:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm0501435 - Kasi Lemmons
+2025-07-27 00:43:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm0621008 - Charles Napier
+2025-07-27 00:43:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm0910145 - Tracey Walter
+2025-07-27 00:43:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000339 - Roger Corman
+2025-07-27 00:43:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm0891381 - Ron Vawter
+2025-07-27 00:43:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm0201719 - Danny Darst
+2025-07-27 00:43:54 [imdb_actor] INFO: Saved actor on imdb_actors: nm1508029 - Jeffrie Lane
+2025-07-27 00:43:54 [imdb_actor] INFO: Saved actor on imdb_actors: nm0265670 - Frankie Faison
+2025-07-27 00:43:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm0493684 - Paul Lazar
+2025-07-27 00:43:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm0124873 - Dan Butler
+2025-07-27 00:43:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001389 - Chris Isaak
+2025-07-27 00:43:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm0793766 - Takashi Shimura
+2025-07-27 00:43:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm0875477 - Keiko Tsushima
+2025-07-27 00:43:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm0793616 - Yukiko Shimazaki
+2025-07-27 00:43:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm0297869 - Kamatari Fujiwara
+2025-07-27 00:43:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm0441961 - Daisuke Katô
+2025-07-27 00:43:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm0454087 - Isao Kimura
+2025-07-27 00:43:58 [imdb_actor] INFO: Saved actor on imdb_actors: nm0156928 - Minoru Chiaki
+2025-07-27 00:43:58 [imdb_actor] INFO: Saved actor on imdb_actors: nm0594348 - Seiji Miyaguchi
+2025-07-27 00:43:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm0467566 - Yoshio Kosugi
+2025-07-27 00:43:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm0383091 - Bokuzen Hidari
+2025-07-27 00:43:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm0408343 - Yoshio Inaba
+2025-07-27 00:44:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm0875237 - Yoshio Tsuchiya
+2025-07-27 00:44:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm0462679 - Kokuten Kôdô
+2025-07-27 00:44:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm0867391 - Eijirô Tôno
+2025-07-27 00:44:01 [imdb_actor] INFO: Saved actor on imdb_actors: nm0879918 - Kichijirô Ueda
+2025-07-27 00:44:01 [imdb_actor] INFO: Saved actor on imdb_actors: nm0851071 - Jun Tatara
+2025-07-27 00:44:02 [imdb_actor] INFO: Saved actor on imdb_actors: nm1226419 - Atsushi Watanabe
+2025-07-27 00:44:02 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000643 - Tom Skerritt
+2025-07-27 00:44:02 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000457 - John Hurt
+2025-07-27 00:44:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001021 - Veronica Cartwright
+2025-07-27 00:44:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001765 - Harry Dean Stanton
+2025-07-27 00:44:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000453 - Ian Holm
+2025-07-27 00:44:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001433 - Yaphet Kotto
+2025-07-27 00:44:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0045993 - Bolaji Badejo
+2025-07-27 00:44:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0395600 - Helen Horton
+2025-07-27 00:44:05 [imdb_actor] INFO: Saved actor on imdb_actors: nm0694101 - Eddie Powell
+2025-07-27 00:44:05 [imdb_actor] INFO: Saved actor on imdb_actors: nm1082477 - Omar Sy
+2025-07-27 00:44:06 [imdb_actor] INFO: Saved actor on imdb_actors: nm0494504 - Anne Le Ny
+2025-07-27 00:44:06 [imdb_actor] INFO: Saved actor on imdb_actors: nm1109153 - Audrey Fleurot
+2025-07-27 00:44:06 [imdb_actor] INFO: Saved actor on imdb_actors: nm1525639 - Joséphine de Meaux
+2025-07-27 00:44:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm0597042 - Clotilde Mollet
+2025-07-27 00:44:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm2031248 - Alba Gaïa Bellugi
+2025-07-27 00:44:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm3994610 - Cyril Mendy
+2025-07-27 00:44:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm5511912 - Salimata Kamate
+2025-07-27 00:44:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm5511483 - Absa Diatou Toure
+2025-07-27 00:44:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0644314 - Grégoire Oestermann
+2025-07-27 00:44:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0196839 - Dominique Daguier
+2025-07-27 00:44:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0139107 - François Caron
+2025-07-27 00:44:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm0024634 - Christian Ameri
+2025-07-27 00:44:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm4552893 - Thomas Solivérès
+2025-07-27 00:44:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm1049589 - Dorothée Brière
+2025-07-27 00:44:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm0221103 - Marie-Laure Descoureaux
+2025-07-27 00:44:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm2173724 - Émilie Caen
+2025-07-27 00:44:11 [scrapy.extensions.logstats] INFO: Crawled 21 pages (at 11 pages/min), scraped 334 items (at 190 items/min)
+2025-07-27 00:44:11 [rotating_proxies.middlewares] INFO: Proxies(good: 1, dead: 2, unchecked: 0, reanimated: 0, mean backoff time: 3325s)
+2025-07-27 00:44:11 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:44:11 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:44:11 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:44:11 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:44:11 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:44:11 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:44:11 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:44:11 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:44:12 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000228 - Kevin Spacey
+2025-07-27 00:44:12 [imdb_actor] INFO: Saved actor on imdb_actors: nm0634159 - Philippe Noiret
+2025-07-27 00:44:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000007 - Humphrey Bogart
+2025-07-27 00:44:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm4271336 - Shameik Moore
+2025-07-27 00:44:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000606 - Jean Reno
+2025-07-27 00:44:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001570 - Edward Norton
+2025-07-27 00:44:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000288 - Christian Bale
+2025-07-27 00:44:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0619938 - Tatsuya Nakadai
+2025-07-27 00:44:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000321 - Gabriel Byrne
+2025-07-27 00:44:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001590 - Chazz Palminteri
+2025-07-27 00:44:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000286 - Stephen Baldwin
+2025-07-27 00:44:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001125 - Benicio Del Toro
+2025-07-27 00:44:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001629 - Kevin Pollak
+2025-07-27 00:44:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000592 - Pete Postlethwaite
+2025-07-27 00:44:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000751 - Suzy Amis
+2025-07-27 00:44:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0002064 - Giancarlo Esposito
+2025-07-27 00:44:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000445 - Dan Hedaya
+2025-07-27 00:44:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000860 - Paul Bartel
+2025-07-27 00:44:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0107808 - Carl Bressler
+2025-07-27 00:44:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm0800339 - Phillipe Simon
+2025-07-27 00:44:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm0790436 - Jack Shearer
+2025-07-27 00:44:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0261452 - Christine Estabrook
+2025-07-27 00:44:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0163988 - Clark Gregg
+2025-07-27 00:44:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0402974 - Morgan Hunter
+2025-07-27 00:44:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0198470 - Ken Daly
+2025-07-27 00:44:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0134073 - Enzo Cannavale
+2025-07-27 00:44:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0041066 - Antonella Attili
+2025-07-27 00:44:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0199774 - Isa Danieli
+2025-07-27 00:44:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0347842 - Leo Gullotta
+2025-07-27 00:44:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0502813 - Marco Leonardi
+2025-07-27 00:44:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0535991 - Pupella Maggio
+2025-07-27 00:44:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0620919 - Agnese Nano
+2025-07-27 00:44:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0872689 - Leopoldo Trieste
+2025-07-27 00:44:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0143150 - Salvatore Cascio
+2025-07-27 00:44:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0162326 - Tano Cimarosa
+2025-07-27 00:44:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0224214 - Nicola Di Pinto
+2025-07-27 00:44:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0501665 - Roberta Lena
+2025-07-27 00:44:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0856196 - Nino Terzo
+2025-07-27 00:44:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0674742 - Jacques Perrin
+2025-07-27 00:44:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0287637 - Brigitte Fossey
+2025-07-27 00:44:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0481115 - Nellina Laganà
+2025-07-27 00:44:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0321291 - Turi Giuffrida
+2025-07-27 00:44:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000006 - Ingrid Bergman
+2025-07-27 00:44:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0002134 - Paul Henreid
+2025-07-27 00:44:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001647 - Claude Rains
+2025-07-27 00:44:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0891998 - Conrad Veidt
+2025-07-27 00:44:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0002113 - Sydney Greenstreet
+2025-07-27 00:44:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000048 - Peter Lorre
+2025-07-27 00:44:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0757064 - S.Z. Sakall
+2025-07-27 00:44:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0495495 - Madeleine Lebeau
+2025-07-27 00:44:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0933330 - Dooley Wilson
+2025-07-27 00:44:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0656226 - Joy Page
+2025-07-27 00:44:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0702798 - John Qualen
+2025-07-27 00:44:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0455893 - Leonid Kinskey
+2025-07-27 00:44:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0092290 - Curt Bois
+2025-07-27 00:44:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0007808 - Abdullah Abbas
+2025-07-27 00:44:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0010185 - Enrique Acosta
+2025-07-27 00:44:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm0013306 - Ed Agresti
+2025-07-27 00:44:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm3629365 - Arnet Amos
+2025-07-27 00:44:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm2794962 - Hailee Steinfeld
+2025-07-27 00:44:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm3109964 - Brian Tyree Henry
+2025-07-27 00:44:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm0904967 - Luna Lauren Velez
+2025-07-27 00:44:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm2159926 - Jake Johnson
+2025-07-27 00:44:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm1209966 - Oscar Isaac
+2025-07-27 00:44:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm0005403 - Jason Schwartzman
+2025-07-27 00:44:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm4793987 - Issa Rae
+2025-07-27 00:44:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm2257207 - Daniel Kaluuya
+2025-07-27 00:44:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm4175221 - Karan Soni
+2025-07-27 00:44:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm0924154 - Shea Whigham
+2025-07-27 00:44:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm2336966 - Greta Lee
+2025-07-27 00:44:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm0991810 - Mahershala Ali
+2025-07-27 00:44:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm3964350 - Amandla Stenberg
+2025-07-27 00:44:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm7851611 - Jharrel Jerome
+2025-07-27 00:44:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm1676221 - Andy Samberg
+2025-07-27 00:44:39 [imdb_actor] INFO: Saved actor on imdb_actors: nm4425051 - Jack Quaid
+2025-07-27 00:44:39 [imdb_actor] INFO: Saved actor on imdb_actors: nm0237222 - Rachel Dratch
+2025-07-27 00:44:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000198 - Gary Oldman
+2025-07-27 00:44:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000204 - Natalie Portman
+2025-07-27 00:44:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000732 - Danny Aiello
+2025-07-27 00:44:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0032216 - Peter Appel
+2025-07-27 00:44:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0089112 - Willi One Blood
+2025-07-27 00:44:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0187199 - Don Creech
+2025-07-27 00:44:42 [imdb_actor] INFO: Saved actor on imdb_actors: nm0321798 - Keith A. Glascoe
+2025-07-27 00:44:42 [imdb_actor] INFO: Saved actor on imdb_actors: nm0779685 - Randolph Scott
+2025-07-27 00:44:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0045937 - Michael Badalucco
+2025-07-27 00:44:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0338746 - Ellen Greene
+2025-07-27 00:44:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0716408 - Elizabeth Regen
+2025-07-27 00:44:44 [imdb_actor] INFO: Saved actor on imdb_actors: nm0560593 - Carl J. Matusovich
+2025-07-27 00:44:44 [imdb_actor] INFO: Saved actor on imdb_actors: nm0784262 - Frank Senger
+2025-07-27 00:44:44 [imdb_actor] INFO: Saved actor on imdb_actors: nm1707797 - Lucius Wyatt Cherokee
+2025-07-27 00:44:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0149987 - Eric Challier
+2025-07-27 00:44:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0076306 - Luc Bernard
+2025-07-27 00:44:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0494069 - Maïwenn
+2025-07-27 00:44:46 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000411 - Edward Furlong
+2025-07-27 00:44:46 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000350 - Beverly D'Angelo
+2025-07-27 00:44:47 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000497 - Jennifer Lien
+2025-07-27 00:44:47 [imdb_actor] INFO: Saved actor on imdb_actors: nm0839486 - Ethan Suplee
+2025-07-27 00:44:47 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000103 - Fairuza Balk
+2025-07-27 00:44:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000984 - Avery Brooks
+2025-07-27 00:44:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001285 - Elliott Gould
+2025-07-27 00:44:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0005078 - Stacy Keach
+2025-07-27 00:44:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm0750916 - William Russ
+2025-07-27 00:44:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm0868956 - Guy Torry
+2025-07-27 00:44:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm0181288 - Joe Cortese
+2025-07-27 00:44:50 [imdb_actor] INFO: Saved actor on imdb_actors: nm0808633 - Jason Bose Smith
+2025-07-27 00:44:50 [imdb_actor] INFO: Saved actor on imdb_actors: nm0529014 - Antonio David Lyons
+2025-07-27 00:44:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm0812550 - Alex Sol
+2025-07-27 00:44:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm0539537 - Keram Malicki-Sánchez
+2025-07-27 00:44:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm0004709 - Giuseppe Andrews
+2025-07-27 00:44:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm6783755 - Michelle Christine White
+2025-07-27 00:44:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm0413168 - Hugh Jackman
+2025-07-27 00:44:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm0424060 - Scarlett Johansson
+2025-07-27 00:44:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000323 - Michael Caine
+2025-07-27 00:44:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm0005305 - Piper Perabo
+2025-07-27 00:44:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm0356017 - Rebecca Hall
+2025-07-27 00:44:54 [imdb_actor] INFO: Saved actor on imdb_actors: nm2195817 - Samantha Mahurin
+2025-07-27 00:44:54 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000309 - David Bowie
+2025-07-27 00:44:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm0785227 - Andy Serkis
+2025-07-27 00:44:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm0204425 - Daniel Davis
+2025-07-27 00:44:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm0682063 - Jim Piddock
+2025-07-27 00:44:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm0623762 - Christopher Neame
+2025-07-27 00:44:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm0752699 - Mark Ryan
+2025-07-27 00:44:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm0715953 - Roger Rees
+2025-07-27 00:44:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm0364807 - Jamie Harris
+2025-07-27 00:44:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm0829685 - Monty Stuart
+2025-07-27 00:44:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm0674052 - Ron Perkins
+2025-07-27 00:44:58 [imdb_actor] INFO: Saved actor on imdb_actors: nm0419633 - Ricky Jay
+2025-07-27 00:44:58 [imdb_actor] INFO: Saved actor on imdb_actors: nm0410968 - Akira Ishihama
+2025-07-27 00:44:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm0412615 - Shima Iwashita
+2025-07-27 00:44:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm0848533 - Tetsurô Tanba
+2025-07-27 00:44:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm0592756 - Masao Mishima
+2025-07-27 00:45:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm0368049 - Ichirô Nakatani
+2025-07-27 00:45:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm0766225 - Kei Satô
+2025-07-27 00:45:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm0408343 - Yoshio Inaba
+2025-07-27 00:45:01 [imdb_actor] INFO: Saved actor on imdb_actors: nm0407030 - Hisashi Igawa
+2025-07-27 00:45:01 [imdb_actor] INFO: Saved actor on imdb_actors: nm1372205 - Tôru Takeuchi
+2025-07-27 00:45:01 [imdb_actor] INFO: Saved actor on imdb_actors: nm0031837 - Yoshirô Aoki
+2025-07-27 00:45:02 [imdb_actor] INFO: Saved actor on imdb_actors: nm0559581 - Tatsuo Matsumura
+2025-07-27 00:45:02 [imdb_actor] INFO: Saved actor on imdb_actors: nm0461983 - Akiji Kobayashi
+2025-07-27 00:45:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm1082958 - Kôichi Hayashi
+2025-07-27 00:45:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm0327104 - Ryûtarô Gomi
+2025-07-27 00:45:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm0044469 - Jô Azumi
+2025-07-27 00:45:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0866736 - Nakajirô Tomita
+2025-07-27 00:45:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0024197 - Shichisaburô Amatsu
+2025-07-27 00:45:04 [rotating_proxies.middlewares] INFO: Proxies(good: 1, dead: 2, unchecked: 0, reanimated: 0, mean backoff time: 3325s)
+2025-07-27 00:45:04 [scrapy.extensions.logstats] INFO: Crawled 29 pages (at 8 pages/min), scraped 478 items (at 144 items/min)
+2025-07-27 00:45:05 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:45:06 [imdb_actor] INFO: Saved actor on imdb_actors: nm1886602 - Miles Teller
+2025-07-27 00:45:06 [imdb_actor] INFO: Saved actor on imdb_actors: nm0799777 - J.K. Simmons
+2025-07-27 00:45:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm2552034 - Melissa Benoist
+2025-07-27 00:45:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001663 - Paul Reiser
+2025-07-27 00:45:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm3271473 - Austin Stowell
+2025-07-27 00:45:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm4336119 - Nate Lang
+2025-07-27 00:45:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm0611889 - Chris Mulkey
+2025-07-27 00:45:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0348515 - Damon Gupton
+2025-07-27 00:45:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0819320 - Suanne Spoke
+2025-07-27 00:45:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm1045739 - Max Kasch
+2025-07-27 00:45:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm5826958 - Charlie Ian
+2025-07-27 00:45:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm2172460 - Jayson Blair
+2025-07-27 00:45:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm2492243 - Kofi Siriboe
+2025-07-27 00:45:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm1276956 - Kavita Patil
+2025-07-27 00:45:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm4392192 - C.J. Vana
+2025-07-27 00:45:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm0523061 - Tarik Lowe
+2025-07-27 00:45:12 [imdb_actor] INFO: Saved actor on imdb_actors: nm4903282 - Tyler Kimball
+2025-07-27 00:45:12 [imdb_actor] INFO: Saved actor on imdb_actors: nm1117946 - Rogelio Douglas Jr.
+2025-07-27 00:45:12 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:45:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000138 - Leonardo DiCaprio
+2025-07-27 00:45:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000354 - Matt Damon
+2025-07-27 00:45:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000197 - Jack Nicholson
+2025-07-27 00:45:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000242 - Mark Wahlberg
+2025-07-27 00:45:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000640 - Martin Sheen
+2025-07-27 00:45:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0935653 - Ray Winstone
+2025-07-27 00:45:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0267812 - Vera Farmiga
+2025-07-27 00:45:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0026364 - Anthony Anderson
+2025-07-27 00:45:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000285 - Alec Baldwin
+2025-07-27 00:45:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0180984 - Kevin Corrigan
+2025-07-27 00:45:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0197647 - James Badge Dale
+2025-07-27 00:45:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0641244 - David O'Hara
+2025-07-27 00:45:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001679 - Mark Rolston
+2025-07-27 00:45:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0906301 - Robert Wahlberg
+2025-07-27 00:45:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0198306 - Kristen Dalton
+2025-07-27 00:45:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm2401565 - Thomas B. Duffy
+2025-07-27 00:45:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0400879 - Richard Hughes
+2025-07-27 00:45:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm0533323 - J.C. MacKenzie
+2025-07-27 00:45:19 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:45:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000128 - Russell Crowe
+2025-07-27 00:45:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001618 - Joaquin Phoenix
+2025-07-27 00:45:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001567 - Connie Nielsen
+2025-07-27 00:45:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001657 - Oliver Reed
+2025-07-27 00:45:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001321 - Richard Harris
+2025-07-27 00:45:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001394 - Derek Jacobi
+2025-07-27 00:45:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0005023 - Djimon Hounsou
+2025-07-27 00:45:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0774516 - David Schofield
+2025-07-27 00:45:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0795344 - John Shrapnel
+2025-07-27 00:45:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0032962 - Tomas Arana
+2025-07-27 00:45:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0005241 - Ralf Moeller
+2025-07-27 00:45:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0004829 - Spencer Treat Clark
+2025-07-27 00:45:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0376101 - David Hemmings
+2025-07-27 00:45:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0281107 - Tommy Flanagan
+2025-07-27 00:45:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0861752 - Sven-Ole Thorsen
+2025-07-27 00:45:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0229084 - Omid Djalili
+2025-07-27 00:45:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0568988 - Nicholas McGaughey
+2025-07-27 00:45:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0445479 - Chris Kell
+2025-07-27 00:45:25 [rotating_proxies.middlewares] INFO: Proxies(good: 1, dead: 2, unchecked: 0, reanimated: 0, mean backoff time: 3325s)
+2025-07-27 00:45:25 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:45:25 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:45:25 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:45:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000111 - Matthew Broderick
+2025-07-27 00:45:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000578 - Anthony Perkins
+2025-07-27 00:45:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0004778 - Adrien Brody
+2025-07-27 00:45:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000460 - Jeremy Irons
+2025-07-27 00:45:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000469 - James Earl Jones
+2025-07-27 00:45:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000155 - Whoopi Goldberg
+2025-07-27 00:45:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000100 - Rowan Atkinson
+2025-07-27 00:45:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0129295 - Niketa Calame-Harris
+2025-07-27 00:45:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0191906 - Jim Cummings
+2025-07-27 00:45:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0347039 - Robert Guillaume
+2025-07-27 00:45:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0446702 - Moira Kelly
+2025-07-27 00:45:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001447 - Nathan Lane
+2025-07-27 00:45:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0494922 - Zoe Leader
+2025-07-27 00:45:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001507 - Cheech Marin
+2025-07-27 00:45:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0754676 - Ernie Sabella
+2025-07-27 00:45:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0801672 - Madge Sinclair
+2025-07-27 00:45:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001795 - Jonathan Taylor Thomas
+2025-07-27 00:45:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0919798 - Frank Welker
+2025-07-27 00:45:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm0146681 - Cathy Cavadini
+2025-07-27 00:45:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm0243804 - Judi M. Durand
+2025-07-27 00:45:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001463 - Janet Leigh
+2025-07-27 00:45:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm0587256 - Vera Miles
+2025-07-27 00:45:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001260 - John Gavin
+2025-07-27 00:45:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000842 - Martin Balsam
+2025-07-27 00:45:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm0570615 - John McIntire
+2025-07-27 00:45:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm0643000 - Simon Oakland
+2025-07-27 00:45:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm0007214 - Frank Albertson
+2025-07-27 00:45:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm0386877 - Patricia Hitchcock
+2025-07-27 00:45:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm0853299 - Vaughn Taylor
+2025-07-27 00:45:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm0878354 - Lurene Tuttle
+2025-07-27 00:45:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm0026930 - John Anderson
+2025-07-27 00:45:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm0590123 - Mort Mills
+2025-07-27 00:45:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm0020513 - Fletcher Allen
+2025-07-27 00:45:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm0045839 - Walter Bacon
+2025-07-27 00:45:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm2146004 - Prudence Beers
+2025-07-27 00:45:39 [imdb_actor] INFO: Saved actor on imdb_actors: nm0141275 - Kit Carson
+2025-07-27 00:45:39 [imdb_actor] INFO: Saved actor on imdb_actors: nm0164119 - Johnny Clark
+2025-07-27 00:45:39 [imdb_actor] INFO: Saved actor on imdb_actors: nm0470981 - Thomas Kretschmann
+2025-07-27 00:45:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0277975 - Frank Finlay
+2025-07-27 00:45:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0288976 - Emilia Fox
+2025-07-27 00:45:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0954076 - Michal Zebrowski
+2025-07-27 00:45:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0832380 - Ed Stoppard
+2025-07-27 00:45:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0513520 - Maureen Lipman
+2025-07-27 00:45:42 [imdb_actor] INFO: Saved actor on imdb_actors: nm0962577 - Jessica Kate Meyer
+2025-07-27 00:45:42 [imdb_actor] INFO: Saved actor on imdb_actors: nm0713469 - Julia Rayner
+2025-07-27 00:45:42 [imdb_actor] INFO: Saved actor on imdb_actors: nm0611148 - Wanja Mues
+2025-07-27 00:45:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0725956 - Richard Ridings
+2025-07-27 00:45:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0789338 - Nomi Sharron
+2025-07-27 00:45:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0590372 - Anthony Milner
+2025-07-27 00:45:44 [imdb_actor] INFO: Saved actor on imdb_actors: nm0803944 - Lucy Skeaping
+2025-07-27 00:45:44 [imdb_actor] INFO: Saved actor on imdb_actors: nm1281253 - Roddy Skeaping
+2025-07-27 00:45:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm1279616 - Ben Harlan
+2025-07-27 00:45:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0492458 - Thomas Lawinky
+2025-07-27 00:45:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0039784 - Joachim Paul Assböck
+2025-07-27 00:45:45 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:45:45 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:45:45 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:45:45 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:45:45 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:45:46 [imdb_actor] INFO: Saved actor on imdb_actors: nm0851302 - Tsutomu Tatsumi
+2025-07-27 00:45:46 [imdb_actor] INFO: Saved actor on imdb_actors: nm0814280 - Song Kang-ho
+2025-07-27 00:45:46 [imdb_actor] INFO: Saved actor on imdb_actors: nm0153738 - Daveigh Chase
+2025-07-27 00:45:47 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000150 - Michael J. Fox
+2025-07-27 00:45:47 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000434 - Mark Hamill
+2025-07-27 00:45:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0794186 - Ayano Shiraishi
+2025-07-27 00:45:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0945312 - Akemi Yamaguchi
+2025-07-27 00:45:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0794002 - Yoshiko Shinohara
+2025-07-27 00:45:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm12329614 - Kôzô Hashida
+2025-07-27 00:45:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm10735745 - Masayo Sakai
+2025-07-27 00:45:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm12329615 - Kazumi Nozaki
+2025-07-27 00:45:50 [imdb_actor] INFO: Saved actor on imdb_actors: nm4410046 - Yoshio Matsuoka
+2025-07-27 00:45:50 [imdb_actor] INFO: Saved actor on imdb_actors: nm12329616 - Masahiro Kanetake
+2025-07-27 00:45:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm6979973 - Kiyoshi Yanagawa
+2025-07-27 00:45:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm12329617 - Hajime Maki
+2025-07-27 00:45:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm6087055 - Atsuo Omote
+2025-07-27 00:45:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm12329618 - Teruhisa Harita
+2025-07-27 00:45:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm0848991 - Hiroshi Tanaka
+2025-07-27 00:45:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm7135999 - Michio Denpô
+2025-07-27 00:45:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm5580208 - Shirô Tamaki
+2025-07-27 00:45:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm0620235 - Tadashi Nakamura
+2025-07-27 00:45:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm12329619 - Mika Sekita
+2025-07-27 00:45:54 [imdb_actor] INFO: Saved actor on imdb_actors: nm1310525 - Lee Sun-kyun
+2025-07-27 00:45:54 [imdb_actor] INFO: Saved actor on imdb_actors: nm1856097 - Cho Yeo-jeong
+2025-07-27 00:45:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm6079248 - Choi Woo-sik
+2025-07-27 00:45:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm6476224 - Park So-dam
+2025-07-27 00:45:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm5744538 - Lee Jeong-eun
+2025-07-27 00:45:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm4525883 - Jang Hye-jin
+2025-07-27 00:45:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm3745391 - Park Myeong-hoon
+2025-07-27 00:45:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm7616095 - Jung Ji-so
+2025-07-27 00:45:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm10700274 - Jung Hyun-jun
+2025-07-27 00:45:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm4522499 - Park Keun-rok
+2025-07-27 00:45:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm10860732 - Jung Yi-seo
+2025-07-27 00:45:58 [imdb_actor] INFO: Saved actor on imdb_actors: nm11261148 - Jo Jae-myeong
+2025-07-27 00:45:58 [imdb_actor] INFO: Saved actor on imdb_actors: nm10215504 - Jung Ik-han
+2025-07-27 00:45:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm11044243 - Kim Kyu-baek
+2025-07-27 00:45:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm11432327 - Hwang In-kyung
+2025-07-27 00:45:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm9086195 - Ahn Seong-bong
+2025-07-27 00:46:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm11432328 - Kim Jin-hyung
+2025-07-27 00:46:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm0687189 - Suzanne Pleshette
+2025-07-27 00:46:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm0997115 - Miyu Irino
+2025-07-27 00:46:01 [imdb_actor] INFO: Saved actor on imdb_actors: nm0383708 - Rumi Hiiragi
+2025-07-27 00:46:01 [imdb_actor] INFO: Saved actor on imdb_actors: nm0622412 - Mari Natsuki
+2025-07-27 00:46:02 [imdb_actor] INFO: Saved actor on imdb_actors: nm0619822 - Takashi Naitô
+2025-07-27 00:46:02 [imdb_actor] INFO: Saved actor on imdb_actors: nm0768005 - Yasuko Sawaguchi
+2025-07-27 00:46:02 [imdb_actor] INFO: Saved actor on imdb_actors: nm0309107 - Tatsuya Gashûin
+2025-07-27 00:46:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm1126340 - Ryûnosuke Kamiki
+2025-07-27 00:46:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm1112144 - Yumi Tamai
+2025-07-27 00:46:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm1126978 - Yô Ôizumi
+2025-07-27 00:46:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0370632 - Koba Hayashi
+2025-07-27 00:46:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0436639 - Tsunehiko Kamijô
+2025-07-27 00:46:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0648777 - Takehiko Ono
+2025-07-27 00:46:05 [imdb_actor] INFO: Saved actor on imdb_actors: nm0837420 - Bunta Sugawara
+2025-07-27 00:46:05 [imdb_actor] INFO: Saved actor on imdb_actors: nm6946829 - Shigeru Wakita
+2025-07-27 00:46:06 [imdb_actor] INFO: Saved actor on imdb_actors: nm1312191 - Shirô Saitô
+2025-07-27 00:46:06 [imdb_actor] INFO: Saved actor on imdb_actors: nm1829293 - Michiko Yamamoto
+2025-07-27 00:46:06 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000502 - Christopher Lloyd
+2025-07-27 00:46:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000670 - Lea Thompson
+2025-07-27 00:46:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000417 - Crispin Glover
+2025-07-27 00:46:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001855 - Tom Wilson
+2025-07-27 00:46:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm0920148 - Claudia Wells
+2025-07-27 00:46:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm0566013 - Marc McClure
+2025-07-27 00:46:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm0818274 - Wendie Jo Sperber
+2025-07-27 00:46:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0225191 - George DiCenzo
+2025-07-27 00:46:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0564589 - Frances Lee McCain
+2025-07-27 00:46:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm0866055 - James Tolkan
+2025-07-27 00:46:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm0169454 - J.J. Cohen
+2025-07-27 00:46:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm0797150 - Casey Siemaszko
+2025-07-27 00:46:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000708 - Billy Zane
+2025-07-27 00:46:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm0914023 - Harry Waters Jr.
+2025-07-27 00:46:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm0298412 - Donald Fullilove
+2025-07-27 00:46:12 [imdb_actor] INFO: Saved actor on imdb_actors: nm0293483 - Lisa Freeman
+2025-07-27 00:46:12 [imdb_actor] INFO: Saved actor on imdb_actors: nm0442022 - Cristen Kauffman
+2025-07-27 00:46:12 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000148 - Harrison Ford
+2025-07-27 00:46:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000402 - Carrie Fisher
+2025-07-27 00:46:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000027 - Alec Guinness
+2025-07-27 00:46:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001088 - Peter Cushing
+2025-07-27 00:46:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000355 - Anthony Daniels
+2025-07-27 00:46:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0048652 - Kenny Baker
+2025-07-27 00:46:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0562679 - Peter Mayhew
+2025-07-27 00:46:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001190 - David Prowse
+2025-07-27 00:46:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0114436 - Phil Brown
+2025-07-27 00:46:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0292235 - Shelagh Fraser
+2025-07-27 00:46:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0701023 - Jack Purvis
+2025-07-27 00:46:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0567018 - Alex McCrindle
+2025-07-27 00:46:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0125952 - Eddie Byrne
+2025-07-27 00:46:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0377120 - Drewe Henley
+2025-07-27 00:46:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0493200 - Denis Lawson
+2025-07-27 00:46:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0353796 - Garrick Hagon
+2025-07-27 00:46:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0458161 - Jack Klaff
+2025-07-27 00:46:18 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 19 pages/min), scraped 676 items (at 198 items/min)
+2025-07-27 00:46:18 [rotating_proxies.middlewares] INFO: Proxies(good: 1, dead: 2, unchecked: 0, reanimated: 0, mean backoff time: 3325s)
+2025-07-27 00:46:18 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:46:18 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:46:18 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:46:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000216 - Arnold Schwarzenegger
+2025-07-27 00:46:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000905 - Roberto Benigni
+2025-07-27 00:46:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm1179105 - Alexandre Rodrigues
+2025-07-27 00:46:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000157 - Linda Hamilton
+2025-07-27 00:46:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000411 - Edward Furlong
+2025-07-27 00:46:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001598 - Robert Patrick
+2025-07-27 00:46:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0091286 - Earl Boen
+2025-07-27 00:46:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0608012 - Joe Morton
+2025-07-27 00:46:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0580924 - S. Epatha Merkerson
+2025-07-27 00:46:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0346003 - Castulo Guerra
+2025-07-27 00:46:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0177528 - Danny Cooksey
+2025-07-27 00:46:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001280 - Jenette Goldstein
+2025-07-27 00:46:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0075359 - Xander Berkeley
+2025-07-27 00:46:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0357696 - Leslie Hamilton Gearren
+2025-07-27 00:46:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0316480 - Ken Gibbel
+2025-07-27 00:46:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0935297 - Robert Winley
+2025-07-27 00:46:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0775623 - Pete Schrum
+2025-07-27 00:46:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0928630 - Shane Wilder
+2025-07-27 00:46:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0250218 - Michael Edwards
+2025-07-27 00:46:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0522027 - Jared Lounsbery
+2025-07-27 00:46:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000971 - Nicoletta Braschi
+2025-07-27 00:46:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0134493 - Giorgio Cantarini
+2025-07-27 00:46:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0243842 - Giustino Durano
+2025-07-27 00:46:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0082979 - Sergio Bini Bustric
+2025-07-27 00:46:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0004650 - Marisa Paredes
+2025-07-27 00:46:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001976 - Horst Buchholz
+2025-07-27 00:46:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0019145 - Lidia Alfonsi
+2025-07-27 00:46:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0518057 - Giuliana Lojodice
+2025-07-27 00:46:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0284997 - Amerigo Fontani
+2025-07-27 00:46:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0211599 - Pietro De Silva
+2025-07-27 00:46:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0350147 - Francesco Guzzo
+2025-07-27 00:46:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0495476 - Raffaella Lebboroni
+2025-07-27 00:46:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0019142 - Claudio Alfonsi
+2025-07-27 00:46:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0056391 - Gil Baroni
+2025-07-27 00:46:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0080641 - Massimo Bianchi
+2025-07-27 00:46:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0092104 - Jürgen Bohn
+2025-07-27 00:46:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0120717 - Verena Buratti
+2025-07-27 00:46:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm1129884 - Leandro Firmino
+2025-07-27 00:46:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm0618690 - Matheus Nachtergaele
+2025-07-27 00:46:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm1249574 - Phellipe Haagensen
+2025-07-27 00:46:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm1179683 - Douglas Silva
+2025-07-27 00:46:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm1178560 - Jonathan Haagensen
+2025-07-27 00:46:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm1179580 - Seu Jorge
+2025-07-27 00:46:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm1403603 - Jefechander Suplino
+2025-07-27 00:46:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm0103797 - Alice Braga
+2025-07-27 00:46:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm1248280 - Emerson Gomes
+2025-07-27 00:46:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm0646663 - Edson Oliveira
+2025-07-27 00:46:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm1249471 - Michel Gomes
+2025-07-27 00:46:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm1368917 - Roberta Rodrigues
+2025-07-27 00:46:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm1404223 - Luis Otávio
+2025-07-27 00:46:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm1323565 - Kiko Marques
+2025-07-27 00:46:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm1402033 - Gustavo Engrácia
+2025-07-27 00:46:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm1130610 - Darlan Cunha
+2025-07-27 00:46:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm1248992 - Robson Rocha
+2025-07-27 00:46:38 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:46:38 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:46:38 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:46:38 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:46:38 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:46:38 [rotating_proxies.middlewares] INFO: Proxies(good: 1, dead: 2, unchecked: 0, reanimated: 0, mean backoff time: 3325s)
+2025-07-27 00:46:39 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000142 - Clint Eastwood
+2025-07-27 00:46:39 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000704 - Elijah Wood
+2025-07-27 00:46:39 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000237 - John Travolta
+2025-07-27 00:46:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000553 - Liam Neeson
+2025-07-27 00:46:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000704 - Elijah Wood
+2025-07-27 00:46:40 [imdb_actor] INFO: Saved actor on imdb_actors: nm0908919 - Eli Wallach
+2025-07-27 00:46:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001812 - Lee Van Cleef
+2025-07-27 00:46:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0321294 - Aldo Giuffrè
+2025-07-27 00:46:41 [imdb_actor] INFO: Saved actor on imdb_actors: nm0685559 - Luigi Pistilli
+2025-07-27 00:46:42 [imdb_actor] INFO: Saved actor on imdb_actors: nm0711502 - Rada Rassimov
+2025-07-27 00:46:42 [imdb_actor] INFO: Saved actor on imdb_actors: nm0677654 - Enzo Petito
+2025-07-27 00:46:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0769116 - Claudio Scarchilli
+2025-07-27 00:46:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0058384 - John Bartha
+2025-07-27 00:46:43 [imdb_actor] INFO: Saved actor on imdb_actors: nm0520859 - Livio Lorenzon
+2025-07-27 00:46:44 [imdb_actor] INFO: Saved actor on imdb_actors: nm0142804 - Antonio Casale
+2025-07-27 00:46:44 [imdb_actor] INFO: Saved actor on imdb_actors: nm0769118 - Sandro Scarchilli
+2025-07-27 00:46:44 [imdb_actor] INFO: Saved actor on imdb_actors: nm0824934 - Benito Stefanelli
+2025-07-27 00:46:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0637064 - Angelo Novi
+2025-07-27 00:46:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0143030 - Antonio Casas
+2025-07-27 00:46:45 [imdb_actor] INFO: Saved actor on imdb_actors: nm0759757 - Aldo Sambrell
+2025-07-27 00:46:46 [imdb_actor] INFO: Saved actor on imdb_actors: nm0612468 - Al Mulock
+2025-07-27 00:46:46 [imdb_actor] INFO: Saved actor on imdb_actors: nm0579155 - Sergio Mendizábal
+2025-07-27 00:46:47 [imdb_actor] INFO: Saved actor on imdb_actors: nm0005212 - Ian McKellen
+2025-07-27 00:46:47 [imdb_actor] INFO: Saved actor on imdb_actors: nm0089217 - Orlando Bloom
+2025-07-27 00:46:47 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000293 - Sean Bean
+2025-07-27 00:46:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0397102 - Alan Howard
+2025-07-27 00:46:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0032370 - Noel Appleby
+2025-07-27 00:46:48 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000276 - Sean Astin
+2025-07-27 00:46:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm1019674 - Sala Baker
+2025-07-27 00:46:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm0101710 - Billy Boyd
+2025-07-27 00:46:49 [imdb_actor] INFO: Saved actor on imdb_actors: nm0785227 - Andy Serkis
+2025-07-27 00:46:50 [imdb_actor] INFO: Saved actor on imdb_actors: nm0190744 - Marton Csokas
+2025-07-27 00:46:50 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001557 - Viggo Mortensen
+2025-07-27 00:46:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm1104283 - Megan Edwards
+2025-07-27 00:46:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm1096480 - Michael Elsworth
+2025-07-27 00:46:51 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000949 - Cate Blanchett
+2025-07-27 00:46:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm0272527 - Mark Ferguson
+2025-07-27 00:46:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000453 - Ian Holm
+2025-07-27 00:46:52 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000489 - Christopher Lee
+2025-07-27 00:46:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000235 - Uma Thurman
+2025-07-27 00:46:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000168 - Samuel L. Jackson
+2025-07-27 00:46:53 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000246 - Bruce Willis
+2025-07-27 00:46:54 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000619 - Tim Roth
+2025-07-27 00:46:54 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001625 - Amanda Plummer
+2025-07-27 00:46:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm0522503 - Laura Lovelace
+2025-07-27 00:46:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm0482851 - Phil LaMarr
+2025-07-27 00:46:55 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001844 - Frank Whaley
+2025-07-27 00:46:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm0824882 - Burr Steers
+2025-07-27 00:46:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000609 - Ving Rhames
+2025-07-27 00:46:56 [imdb_actor] INFO: Saved actor on imdb_actors: nm0129538 - Paul Calderon
+2025-07-27 00:46:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm0302345 - Bronagh Gallagher
+2025-07-27 00:46:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000275 - Rosanna Arquette
+2025-07-27 00:46:57 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000655 - Eric Stoltz
+2025-07-27 00:46:58 [imdb_actor] INFO: Saved actor on imdb_actors: nm0387533 - Jerome Patrick Hoban
+2025-07-27 00:46:58 [imdb_actor] INFO: Saved actor on imdb_actors: nm0318402 - Michael Gilden
+2025-07-27 00:46:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm0794967 - Gary Shorelle
+2025-07-27 00:46:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000146 - Ralph Fiennes
+2025-07-27 00:46:59 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001426 - Ben Kingsley
+2025-07-27 00:47:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm0328751 - Caroline Goodall
+2025-07-27 00:47:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm0755974 - Jonathan Sagall
+2025-07-27 00:47:00 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001110 - Embeth Davidtz
+2025-07-27 00:47:01 [imdb_actor] INFO: Saved actor on imdb_actors: nm0311343 - Malgorzata Gebel
+2025-07-27 00:47:01 [imdb_actor] INFO: Saved actor on imdb_actors: nm0506616 - Shmuel Levy
+2025-07-27 00:47:01 [imdb_actor] INFO: Saved actor on imdb_actors: nm0411980 - Mark Ivanir
+2025-07-27 00:47:02 [imdb_actor] INFO: Saved actor on imdb_actors: nm0534151 - Béatrice Macola
+2025-07-27 00:47:02 [imdb_actor] INFO: Saved actor on imdb_actors: nm0786614 - Andrzej Seweryn
+2025-07-27 00:47:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm0903110 - Friedrich von Thun
+2025-07-27 00:47:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm0525181 - Krzysztof Luft
+2025-07-27 00:47:03 [imdb_actor] INFO: Saved actor on imdb_actors: nm0624582 - Harry Nehring
+2025-07-27 00:47:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0919256 - Norbert Weisser
+2025-07-27 00:47:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0633058 - Adi Nitzan
+2025-07-27 00:47:04 [imdb_actor] INFO: Saved actor on imdb_actors: nm0773946 - Michael Schneider
+2025-07-27 00:47:05 [imdb_actor] INFO: Saved actor on imdb_actors: nm0264577 - Miri Fabian
+2025-07-27 00:47:05 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001557 - Viggo Mortensen
+2025-07-27 00:47:05 [imdb_actor] INFO: Saved actor on imdb_actors: nm0005212 - Ian McKellen
+2025-07-27 00:47:06 [imdb_actor] INFO: Saved actor on imdb_actors: nm0089217 - Orlando Bloom
+2025-07-27 00:47:06 [imdb_actor] INFO: Saved actor on imdb_actors: nm0032370 - Noel Appleby
+2025-07-27 00:47:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm0040012 - Ali Astin
+2025-07-27 00:47:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000276 - Sean Astin
+2025-07-27 00:47:07 [imdb_actor] INFO: Saved actor on imdb_actors: nm0040058 - David Aston
+2025-07-27 00:47:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm0045324 - John Bach
+2025-07-27 00:47:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000293 - Sean Bean
+2025-07-27 00:47:08 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000949 - Cate Blanchett
+2025-07-27 00:47:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0101710 - Billy Boyd
+2025-07-27 00:47:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm1480092 - Sadwyn Brophy
+2025-07-27 00:47:09 [imdb_actor] INFO: Saved actor on imdb_actors: nm0115143 - Alistair Browning
+2025-07-27 00:47:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm0190744 - Marton Csokas
+2025-07-27 00:47:10 [imdb_actor] INFO: Saved actor on imdb_actors: nm1480102 - Richard Edge
+2025-07-27 00:47:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm1480106 - Jason Fitch
+2025-07-27 00:47:11 [imdb_actor] INFO: Saved actor on imdb_actors: nm0384060 - Bernard Hill
+2025-07-27 00:47:11 [scrapy.extensions.logstats] INFO: Crawled 48 pages (at 0 pages/min), scraped 820 items (at 144 items/min)
+2025-07-27 00:47:11 [rotating_proxies.middlewares] INFO: Proxies(good: 1, dead: 2, unchecked: 0, reanimated: 0, mean backoff time: 3325s)
+2025-07-27 00:47:12 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:47:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000008 - Marlon Brando
+2025-07-27 00:47:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000199 - Al Pacino
+2025-07-27 00:47:13 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001001 - James Caan
+2025-07-27 00:47:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000473 - Diane Keaton
+2025-07-27 00:47:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0144710 - Richard S. Castellano
+2025-07-27 00:47:14 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000380 - Robert Duvall
+2025-07-27 00:47:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001330 - Sterling Hayden
+2025-07-27 00:47:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0549134 - John Marley
+2025-07-27 00:47:15 [imdb_actor] INFO: Saved actor on imdb_actors: nm0002017 - Richard Conte
+2025-07-27 00:47:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0504803 - Al Lettieri
+2025-07-27 00:47:16 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001820 - Abe Vigoda
+2025-07-27 00:47:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001735 - Talia Shire
+2025-07-27 00:47:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0751625 - Gianni Russo
+2025-07-27 00:47:17 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001030 - John Cazale
+2025-07-27 00:47:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0094036 - Rudy Bond
+2025-07-27 00:47:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0553887 - Al Martino
+2025-07-27 00:47:18 [imdb_actor] INFO: Saved actor on imdb_actors: nm0455088 - Morgana King
+2025-07-27 00:47:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm0598926 - Lenny Montana
+2025-07-27 00:47:19 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:47:19 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000199 - Al Pacino
+2025-07-27 00:47:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000134 - Robert De Niro
+2025-07-27 00:47:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000380 - Robert Duvall
+2025-07-27 00:47:20 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000473 - Diane Keaton
+2025-07-27 00:47:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001030 - John Cazale
+2025-07-27 00:47:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001735 - Talia Shire
+2025-07-27 00:47:21 [imdb_actor] INFO: Saved actor on imdb_actors: nm0833448 - Lee Strasberg
+2025-07-27 00:47:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0311155 - Michael V. Gazzo
+2025-07-27 00:47:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0819525 - G.D. Spradlin
+2025-07-27 00:47:22 [imdb_actor] INFO: Saved actor on imdb_actors: nm0109175 - Richard Bright
+2025-07-27 00:47:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0608311 - Gastone Moschin
+2025-07-27 00:47:23 [imdb_actor] INFO: Saved actor on imdb_actors: nm0743159 - Tom Rosqui
+2025-07-27 00:47:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0456124 - Bruno Kirby
+2025-07-27 00:47:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0803370 - Frank Sivero
+2025-07-27 00:47:24 [imdb_actor] INFO: Saved actor on imdb_actors: nm0211495 - Francesca De Sapio
+2025-07-27 00:47:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0455088 - Morgana King
+2025-07-27 00:47:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0384494 - Marianna Hill
+2025-07-27 00:47:25 [imdb_actor] INFO: Saved actor on imdb_actors: nm0872689 - Leopoldo Trieste
+2025-07-27 00:47:25 [rotating_proxies.middlewares] INFO: Proxies(good: 1, dead: 2, unchecked: 0, reanimated: 0, mean backoff time: 3325s)
+2025-07-27 00:47:25 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:47:25 [imdb_actor] INFO: Using proxy: http://127.0.0.1:8080
+2025-07-27 00:47:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000020 - Henry Fonda
+2025-07-27 00:47:26 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000288 - Christian Bale
+2025-07-27 00:47:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0002011 - Lee J. Cobb
+2025-07-27 00:47:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000842 - Martin Balsam
+2025-07-27 00:47:27 [imdb_actor] INFO: Saved actor on imdb_actors: nm0275835 - John Fiedler
+2025-07-27 00:47:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0550855 - E.G. Marshall
+2025-07-27 00:47:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001430 - Jack Klugman
+2025-07-27 00:47:28 [imdb_actor] INFO: Saved actor on imdb_actors: nm0083081 - Edward Binns
+2025-07-27 00:47:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0912001 - Jack Warden
+2025-07-27 00:47:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0842137 - Joseph Sweeney
+2025-07-27 00:47:29 [imdb_actor] INFO: Saved actor on imdb_actors: nm0003225 - Ed Begley
+2025-07-27 00:47:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0903667 - George Voskovec
+2025-07-27 00:47:30 [imdb_actor] INFO: Saved actor on imdb_actors: nm0916434 - Robert Webber
+2025-07-27 00:47:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0094036 - Rudy Bond
+2025-07-27 00:47:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0331131 - Tom Gorman
+2025-07-27 00:47:31 [imdb_actor] INFO: Saved actor on imdb_actors: nm0446450 - James Kelly
+2025-07-27 00:47:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0625180 - Billy Nelson
+2025-07-27 00:47:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0767847 - John Savoca
+2025-07-27 00:47:32 [imdb_actor] INFO: Saved actor on imdb_actors: nm0830818 - Walter Stocker
+2025-07-27 00:47:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm0005132 - Heath Ledger
+2025-07-27 00:47:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001173 - Aaron Eckhart
+2025-07-27 00:47:33 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000323 - Michael Caine
+2025-07-27 00:47:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm0350454 - Maggie Gyllenhaal
+2025-07-27 00:47:34 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000198 - Gary Oldman
+2025-07-27 00:47:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000151 - Morgan Freeman
+2025-07-27 00:47:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm1010931 - Monique Gabriela Curnen
+2025-07-27 00:47:35 [imdb_actor] INFO: Saved actor on imdb_actors: nm0212939 - Ron Dean
+2025-07-27 00:47:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm0614165 - Cillian Murphy
+2025-07-27 00:47:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm1977856 - Chin Han
+2025-07-27 00:47:36 [imdb_actor] INFO: Saved actor on imdb_actors: nm0004801 - Nestor Carbonell
+2025-07-27 00:47:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm0000616 - Eric Roberts
+2025-07-27 00:47:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm0182662 - Ritchie Coster
+2025-07-27 00:47:37 [imdb_actor] INFO: Saved actor on imdb_actors: nm0001309 - Anthony Michael Hall
+2025-07-27 00:47:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm0843775 - Keith Szarabajka
+2025-07-27 00:47:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm0568801 - Colin McFarlane
+2025-07-27 00:47:38 [imdb_actor] INFO: Saved actor on imdb_actors: nm0367176 - Joshua Harto
+2025-07-27 00:47:39 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-07-27 00:47:39 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'bans/error/twisted.internet.error.ConnectionRefusedError': 17,
+ 'bans/status/307': 3,
+ 'downloader/exception_count': 17,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectionRefusedError': 17,
+ 'downloader/request_bytes': 85244,
+ 'downloader/request_count': 72,
+ 'downloader/request_method_count/GET': 72,
+ 'downloader/response_bytes': 14310962,
+ 'downloader/response_count': 55,
+ 'downloader/response_status_count/200': 52,
+ 'downloader/response_status_count/307': 3,
+ 'elapsed_time_seconds': 409.228506,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 7, 27, 5, 47, 39, 8526, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 71523928,
+ 'httpcompression/response_count': 51,
+ 'item_scraped_count': 892,
+ 'items_per_minute': 130.8557457212714,
+ 'log_count/INFO': 1023,
+ 'log_count/WARNING': 3,
+ 'memusage/max': 334712832,
+ 'memusage/startup': 59441152,
+ 'proxies/dead': 2,
+ 'proxies/good': 1,
+ 'proxies/mean_backoff': 3325.504334491689,
+ 'proxies/reanimated': 0,
+ 'proxies/unchecked': 0,
+ 'request_depth_max': 1,
+ 'response_received_count': 52,
+ 'responses_per_minute': 7.6283618581907096,
+ 'retry/count': 2,
+ 'retry/reason_count/twisted.internet.error.ConnectionRefusedError': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 70,
+ 'scheduler/dequeued/memory': 70,
+ 'scheduler/enqueued': 70,
+ 'scheduler/enqueued/memory': 70,
+ 'start_time': datetime.datetime(2025, 7, 27, 5, 40, 49, 780020, tzinfo=datetime.timezone.utc)}
+2025-07-27 00:47:39 [scrapy.core.engine] INFO: Spider closed (finished)

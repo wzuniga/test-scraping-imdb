@@ -1,4 +1,5 @@
-# Configuración de headers para requests Scrapy
+
+# Default HTTP headers for all Scrapy requests to mimic a real browser and avoid blocking.
 
 DEFAULT_REQUEST_HEADERS = {
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',

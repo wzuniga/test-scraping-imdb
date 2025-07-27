@@ -2,6 +2,9 @@ import json
 from items import ImdbMovieItem, ImdbActorItem
 
 def extract_movies_data(json_data_movies):
+    """
+    Extracts a list of movie IDs from the IMDb top chart JSON.
+    """
     import json
     try:
         data = json.loads(json_data_movies)
@@ -24,6 +27,10 @@ def extract_movies_data(json_data_movies):
         raise ValueError(f'Error parsing movies JSON: {e}')
 
 def extract_next_data_json(response, detail=False, movie_id=None):
+    """
+    Extracts the __NEXT_DATA__ JSON block from the HTML response.
+    Raises ValueError if not found.
+    """
     next_data_json = response.xpath('//script[@id="__NEXT_DATA__" and @type="application/json"]/text()').get()
     if next_data_json is None:
         if detail and movie_id:
@@ -34,6 +41,9 @@ def extract_next_data_json(response, detail=False, movie_id=None):
     return next_data_json
 
 def extract_movie_item(detail_data):
+    """
+    Yields an ImdbMovieItem from the movie detail JSON data.
+    """
     foldData = detail_data.get('props', {}).get('pageProps', {}).get('aboveTheFoldData', {})
     metacritic = foldData.get('metacritic') or {}
     metascore_obj = metacritic.get('metascore') if isinstance(metacritic, dict) else None
@@ -49,6 +59,9 @@ def extract_movie_item(detail_data):
     yield movie_item
 
 def extract_actor_items(detail_data):
+    """
+    Yields ImdbActorItem objects for each actor in the movie detail JSON data.
+    """
     mainColumnData = detail_data.get('props', {}).get('pageProps', {}).get('mainColumnData', {})
     foldData = detail_data.get('props', {}).get('pageProps', {}).get('aboveTheFoldData', {})
     main_actor_ids = extract_main_actors(foldData)
@@ -67,6 +80,9 @@ def extract_actor_items(detail_data):
             )
 
 def extract_main_actors(foldData):
+    """
+    Returns a set of actor IDs for main actors from the foldData JSON.
+    """
     cast_page_edges = foldData.get('castPageTitle', {}).get('edges', [])
     main_actor_ids = set()
     for edge in cast_page_edges:
@@ -78,6 +94,9 @@ def extract_main_actors(foldData):
     return main_actor_ids
 
 def get_duration_minutes(seconds):
+    """
+    Converts seconds to minutes if divisible by 60, else returns 0.
+    """
     try:
         if isinstance(seconds, int) and seconds % 60 == 0:
             return seconds // 60

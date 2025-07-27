@@ -1,6 +1,11 @@
 class PostgresManager:
+    """
+    PostgreSQL manager for IMDb tables and records.
+    Provides methods to create tables and insert movies and actors.
+    """
     @staticmethod
     def create_tables(cur):
+        """Create imdb_movies and imdb_actors tables if they do not exist."""
         cur.execute('''
             CREATE TABLE IF NOT EXISTS imdb_movies (
                 movie_id TEXT PRIMARY KEY,
@@ -25,6 +30,7 @@ class PostgresManager:
 
     @staticmethod
     def insert_movie(cur, item):
+        """Insert or update a movie record in imdb_movies."""
         cur.execute('''
             INSERT INTO imdb_movies (movie_id, title, year, rating, duration, metascore)
             VALUES (%s, %s, %s, %s, %s, %s)
@@ -45,6 +51,7 @@ class PostgresManager:
 
     @staticmethod
     def insert_actor(cur, item):
+        """Insert or update an actor record in imdb_actors."""
         cur.execute('''
             INSERT INTO imdb_actors (actor_id, movie_id, name, is_main_character)
             VALUES (%s, %s, %s, %s)

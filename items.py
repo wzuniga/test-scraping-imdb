@@ -2,6 +2,9 @@
 import scrapy
 
 class ImdbMovieItem(scrapy.Item):
+    """
+    Scrapy item for storing IMDb movie data fields.
+    """
     movie_id = scrapy.Field()
     title = scrapy.Field()
     year = scrapy.Field()
@@ -10,6 +13,9 @@ class ImdbMovieItem(scrapy.Item):
     metascore = scrapy.Field()
 
 class ImdbActorItem(scrapy.Item):
+    """
+    Scrapy item for storing IMDb actor data fields.
+    """
     actor_id = scrapy.Field()
     movie_id = scrapy.Field()
     name = scrapy.Field()

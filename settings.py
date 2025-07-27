@@ -45,7 +45,6 @@ if USE_PROXY:
     ROTATING_PROXY_LIST = [
         'http://51.158.68.68:8811',
         'http://185.199.228.140:7300',
-        'http://85.193.191.199:8080',
         'http://127.0.0.1:8080'
     ]
     DOWNLOADER_MIDDLEWARES = {

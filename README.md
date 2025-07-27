@@ -28,6 +28,7 @@ A continuación se incluyen los principales entregables del proyecto, disponible
 - [Script SQL: creación de tablas, vistas e índices](files/database.sql)
 - [Archivo CSV generado para actores](files/database_actors.csv)
 - [Archivo CSV generado para películas](files/database_movies.csv)
+- [Comparación Técnica: Selenium o Playwright ](files/scraper_playwright.md)
 
 ### Logs de ejecución
 
@@ -106,6 +107,10 @@ Esto permite que, si los proxies públicos fallan o no están disponibles, Scrap
 
 1. Asegúrate de que el entorno virtual esté activado.
 2. Ejecuta uno de los siguientes spiders según la información que quieras extraer:
+
+> **Nota sobre la arquitectura de spiders:**
+> Se implementaron 3 spiders separados (películas, actores y combinado) porque la lógica de obtención y procesamiento de actores y películas es extensa y diferente. Por eficiencia de desarrollo y claridad, es mejor mantenerlos separados. La principal desventaja es que se generan requests duplicadas (por ejemplo, ambos spiders pueden solicitar la misma página de detalle), lo que incrementa el tráfico de datos a través del proxy. Sin embargo, la gran ventaja es que los spiders pueden ejecutarse en paralelo en diferentes servidores o entornos, sin dependencias entre sí, lo que mejora significativamente el tiempo total de scraping y la escalabilidad del sistema.
+
    - **Películas:**
      ```sh
      scrapy crawl imdb_movie
